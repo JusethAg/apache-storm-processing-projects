@@ -20,6 +20,7 @@
             <artifactId>storm-core</artifactId>
             <version>${apache-storm.version}</version>
             <scope>compile</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
 
         <dependency>

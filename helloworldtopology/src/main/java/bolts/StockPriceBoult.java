@@ -20,6 +20,9 @@ public class StockPriceBoult extends BaseBasicBolt {
 
     public void prepare(Map stormConf, TopologyContext context) {
 
+        // Just for local purpose, comment for a remote cluster
+
+        /*
         String fileName = stormConf.get("fileToWrite").toString();
 
         try {
@@ -27,7 +30,7 @@ public class StockPriceBoult extends BaseBasicBolt {
         } catch (Exception e) {
             throw new RuntimeException("Error opening file [" + fileName + "]");
         }
-
+        */
     }
 
     public void execute(Tuple tuple, BasicOutputCollector basicOutputCollector) {
@@ -53,6 +56,11 @@ public class StockPriceBoult extends BaseBasicBolt {
 
 
     public void cleanup() {
+
+        // Just for local purpose, comment for a remote cluster
+
+        /*
         printWriter.close();
+        */
     }
 }
