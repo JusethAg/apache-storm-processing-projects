@@ -1,4 +1,4 @@
-package custom.grouping;
+package grouping;
 
 import org.apache.storm.generated.GlobalStreamId;
 import org.apache.storm.grouping.CustomStreamGrouping;
